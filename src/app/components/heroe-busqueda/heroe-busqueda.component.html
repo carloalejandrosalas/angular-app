@@ -1,0 +1,12 @@
+<h1 class="animated fadeIn fast">Buqueda de <small>{{termino | uppercase}}</small></h1>
+
+<hr>
+
+<h3 *ngIf = "heroes.length == 0"> No se encontro ninguna coincidencia</h3>
+
+<div class="card-columns animated fadeIn">
+
+  <app-heroe-tarjeta [heroe] = "heroe" [index] = "heroe.idx" 
+  *ngFor="let heroe of heroes"></app-heroe-tarjeta>  
+
+</div>
